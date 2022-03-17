@@ -33,7 +33,7 @@ body {
   width: 350px;
 }
 
-.progress-container::before {
+.progress-container::before { 
   content: '';
   background-color: var(--line-border-empty);
   position: absolute;
@@ -42,7 +42,7 @@ body {
   transform: translateY(-50%);
   height: 4px;
   width: 100%;
-  z-index: -1;
+  z-index: -1; /* TO make something behind it is before the circle */
 }
 
 .progress {
